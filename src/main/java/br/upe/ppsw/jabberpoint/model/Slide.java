@@ -1,9 +1,11 @@
-package br.upe.ppsw.jabberpoint.apresentacao;
+package br.upe.ppsw.jabberpoint.model;
 
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
 import java.util.Vector;
+
+import br.upe.ppsw.jabberpoint.view.Style;
 
 public class Slide {
 
