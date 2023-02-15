@@ -3,6 +3,8 @@ package br.upe.ppsw.jabberpoint.control;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import br.upe.ppsw.jabberpoint.model.Presentation;
+
 public class KeyController extends KeyAdapter {
 
   private Presentation presentation;

@@ -40,14 +40,14 @@ public class BitmapItem extends SlideItem {
   }
 
   public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
-    return new Rectangle((int) (myStyle.indent * scale), 0,
+    return new Rectangle((int) (myStyle.getIndent() * scale), 0,
         (int) (bufferedImage.getWidth(observer) * scale),
-        ((int) (myStyle.leading * scale)) + (int) (bufferedImage.getHeight(observer) * scale));
+        ((int) (myStyle.getIndent() * scale)) + (int) (bufferedImage.getHeight(observer) * scale));
   }
 
   public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver observer) {
-    int width = x + (int) (myStyle.indent * scale);
-    int height = y + (int) (myStyle.leading * scale);
+    int width = x + (int) (myStyle.getIndent() * scale);
+    int height = y + (int) (myStyle.getLeading() * scale);
 
     g.drawImage(bufferedImage, width, height, (int) (bufferedImage.getWidth(observer) * scale),
         (int) (bufferedImage.getHeight(observer) * scale), observer);

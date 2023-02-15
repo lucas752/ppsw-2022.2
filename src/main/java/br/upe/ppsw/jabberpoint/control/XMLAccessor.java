@@ -15,6 +15,11 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import br.upe.ppsw.jabberpoint.model.Accessor;
+import br.upe.ppsw.jabberpoint.model.BitmapItem;
+import br.upe.ppsw.jabberpoint.model.Presentation;
+import br.upe.ppsw.jabberpoint.model.Slide;
+import br.upe.ppsw.jabberpoint.model.SlideItem;
+import br.upe.ppsw.jabberpoint.model.TextItem;
 
 public class XMLAccessor extends Accessor {
 
